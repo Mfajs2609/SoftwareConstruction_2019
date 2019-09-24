@@ -1,3 +1,5 @@
+package AbstractDataType;
+
 public class Drawer<T> {
 
     private T type;
@@ -10,4 +12,3 @@ public class Drawer<T> {
         return type;
     }
 }
-

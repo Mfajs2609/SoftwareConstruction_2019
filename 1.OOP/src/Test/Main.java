@@ -1,10 +1,10 @@
-import java.util.Random;
+package Test;
 
 public class Main {
 
     //Overiding
     //public static void main(String[]    args) {
-    //      Cars cars = new Cars();
+    //      Test.Cars cars = new Test.Cars();
 
 
     //}
@@ -12,13 +12,13 @@ public class Main {
 
     //Overloading
     //public static void main(String[] args) {
-    //    Sum s = new Sum();
+    //    Test.Sum s = new Test.Sum();
     //    System.out.println(s.sum(5,5));
     //    System.out.println(s.sum(3,7,5));
     //}
 
     public static void main(String[] args) {
-        //Cow funnySoundingCow = new Cow();
+        //Test.Cow funnySoundingCow = new Test.Cow();
         //System.out.println(funnySoundingCow);
 
 
@@ -44,18 +44,18 @@ public class Main {
 
 
         //todo object polymorphism
-        Animal cowAnimal = firstCow;
+        //Animal cowAnimal = firstCow;
         Cow cowCow = firstCow;
         SoundGenerator cowSound = firstCow;
 
-        cowAnimal.eat(food);
+        //cowAnimal.eat(food);
         cowCow.eat(food);
         cowSound.sound();
         //casting
         ((Cow) cowSound).eat(food);
 
         // todo no go, cant instantiate abstract classes
-        //Kingdom kingdom = new Kingdom() {
+        //Test.Kingdom kingdom = new Test.Kingdom() {
         Kingdom kingdom = new Kingdom(){
             @Override
             public void being(){

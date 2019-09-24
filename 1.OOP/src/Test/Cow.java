@@ -1,11 +1,12 @@
+package Test;
+
 import java.util.Random;
-import java.util.Arrays;
 
 public class Cow implements SoundGenerator {
 
 
     public String eat(String[] food) {
-        return "Cow dung";
+        return "Test.Cow dung";
     }
 
 

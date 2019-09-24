@@ -1,3 +1,5 @@
+package Test;
+
 public class Animal extends Kingdom  {
 
     public String eat(String[] food) {
