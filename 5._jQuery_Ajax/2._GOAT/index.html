@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the GOAT site</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Biggest innovator in goat technology</h1>
+
+
+    <div class="quote">
+        <p> Kayne quote of the refreshing of the browser</p>
+        <p class="quote-paragraph"></p>
+    </div>
+
+    <div class ="gallery">
+    </div>
+
+
+    <div class="about">
+        <p>About</p>
+    </div>
+
+
+    <script>
+    //    var person = {
+    //        name: "Mathias",
+    //        age: "24"
+    //    };
+
+
+    //    var about ="Hey my name is " + person.name +" and my age is "+ person.age +".";
+    //    console.log($)
+
+        //kan bruge $ til at få adgang til jQuery
+    //    $(".about").append("<p>" + about + "</p>");
+
+
+    //   var imageTagStart ="<img scr='";
+    //   var imageTagEnd ="' />";
+    //   for(var i=0; i<10; i++) {
+
+    //       $(".gallery").append(imageTagStart+"https://placegoat.com/200/200"+imageTagEnd);
+    //   }
+
+    var paragraphTagStart ="<p>";
+    var paragraphTagEnd ="<p/>";
+
+
+
+
+    //setTimeout(function timeOut() {
+        //code to run after the time out
+        //fade out the entire qoute section
+    //    $(".quote").fadeOut(5000)
+    //}, 800)
+
+    function getKayneQuote() {
+
+        $.get("https://api.kanye.rest/", function response(data) {
+            $(".quote-paragraph").empty();
+            $(".quote-paragraph").append(paragraphTagStart + data.quote + paragraphTagEnd);
+        });
+    }
+
+     setInterval(function timeOut1() {
+         $.get("https://api.kanye.rest/", function response(data) {
+             $(".quote-paragraph").empty();
+             $(".quote-paragraph").append(paragraphTagStart + data.quote + paragraphTagEnd);
+         });
+     }, 5000)
+
+
+
+    </script>
+</body>
+</html>

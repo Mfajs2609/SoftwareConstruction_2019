@@ -1,0 +1,12 @@
+Hej Anders
+
+Jeg har forsøgt at løse opgaven så godt jeg kunne, men det er på ingen måde gået optimalt.
+Min besvarelse taler for sig selv, og der er mange elementer i opgave beskrivelsen der mangler.
+
+87 UDP_Client: Forsøgte at benytte threads som skulle modtage UDP packets fra serveren og
+vise indeholdet til brugeren.
+
+Se også ClientReceiver: Tænker at jeg er på rette spor med ClientReceiver klasse.
+
+Mvh.
+Mathias Fajstrup Hellesøe

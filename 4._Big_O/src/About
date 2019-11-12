@@ -1,0 +1,31 @@
+
+What is the better algorithm
+        - Faster? --------> This is what Big O focuses upon
+        - Less memory intensive?
+        - More readable?
+
+        Faster = Time complexity = Big O
+
+        Don't care about different input, machine independent
+
+        We look at the worst case
+
+        https://www.bigocheatsheet.com/
+
+        O(1) < O(logn) < O(n) < O(n^2) < O(2^n) < O(n!)
+
+        Rules of Big O:
+        1. Ignore constants
+        2. Ignore low-order terms
+
+        Constants don't matter
+        O(500) -> O(1) (constant time)
+        O(2n) -> O(n)
+        O(15n^2) -> O(n^2)
+
+        Smaller terms don't matter
+        O(n + 10) ->  O(n)
+        O(1000n + 50) -> O(n)
+        O(n^2 + 5n + 8) -> O(n^2)
+
+        https://practice.geeksforgeeks.org/problems/bubble-sort/1
